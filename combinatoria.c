@@ -16,3 +16,8 @@ unsigned long long combinatoria(int n, int r) {
     return factorial(n) / (factorial(r) * factorial(n - r));
 }
 
+// Función para calcular la permutación (nPr)
+unsigned long long permutacion(int n, int r) {
+    if (r > n) return 0;
+    return factorial(n) / factorial(n - r);
+}
