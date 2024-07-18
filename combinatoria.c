@@ -21,3 +21,8 @@ unsigned long long permutacion(int n, int r) {
     if (r > n) return 0;
     return factorial(n) / factorial(n - r);
 }
+
+// Función para calcular el exponente de un número
+double exponente(double base, int exp) {
+    return pow(base, exp);
+}
