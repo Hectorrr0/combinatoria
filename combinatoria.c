@@ -10,3 +10,9 @@ unsigned long long factorial(int n) {
     return result;
 }
 
+// Función para calcular la combinatoria (nCr)
+unsigned long long combinatoria(int n, int r) {
+    if (r > n) return 0;
+    return factorial(n) / (factorial(r) * factorial(n - r));
+}
+
